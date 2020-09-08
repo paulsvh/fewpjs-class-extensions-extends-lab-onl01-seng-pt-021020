@@ -1,7 +1,7 @@
 class Polygon{
-  constructor(sidesArray){
-    this.sidesArray = sidesArray;
-    this.count = this.sidesArray.length
+  constructor(sides){
+    this.sides = sides;
+    this.count = this.sides.length
   }
 
   get countSides(){
@@ -10,8 +10,8 @@ class Polygon{
 
   get perimeter(){
     let x = 0
-    for (let i=0; i<this.sidesArray.length; i++){
-      x += this.sidesArray[i]
+    for (let i=0; i<this.sides.length; i++){
+      x += this.sides[i]
     }
     return x
   }
