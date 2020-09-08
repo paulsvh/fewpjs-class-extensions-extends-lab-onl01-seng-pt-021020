@@ -7,4 +7,12 @@ class Polygon{
     return this.sidesArray.length
   }
 
+  get perimeter(){
+    let x = 0
+    for (i=0; i<this.sidesArray.length; i++){
+      x += sidesArray[i]
+    }
+    return x
+  }
+
 }
